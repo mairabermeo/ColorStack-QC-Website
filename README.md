@@ -1,5 +1,10 @@
 # ColorStack-QC-Website
 
 Authors:
+Maira Bermeo
+Jude Marryshow
+Faiza Khan
+Hanya Rizvi
 
-We built a website for ColorStack @ QC. 
+Purpose:
+We built a website for ColorStack at Queens College.
