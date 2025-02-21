@@ -1,85 +1,83 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
   <link rel="stylesheet" href="style.css">
-  
   <title>ColorStack</title>
 </head>
-<body>
-  <!--NAVBAR | Logo Image | ColorStack @ Queens College | About | Board | Events | Become A Member --> 
-  <nav>
 
-    <!--This will be on the left side-->
-    <div class = "left">
-      <img src = "images/logo.webp" alt = "logo image">
-      <a href="/">ColorStack At QC</a>
+<body>
+
+  <!--NAVBAR-->
+  <nav>
+    <div class="left">
+      <a href="/">
+        <img src="logo.png" alt="ColorStack Logo" class="logo"> 
+        ColorStack At QC
+      </a>
     </div>
 
-    <!--This will be on the right side-->
-    <div class = "right">
-      <a href = "/" target = "_blank" rel="noopener 
-      noreferrer">
-      <span>About</span>
-      </a>
-
-      <a href = "/" target = "_blank" rel="noopener 
-      noreferrer">
-      <span>Board</span>
-      </a>
-
-      <a href = "/" target = "_blank" rel="noopener 
-      noreferrer">
-      <span>Events</span>
-      </a>
-
-      <a href = "/" target = "_blank" rel="noopener 
-      noreferrer">
-      <span>Become A Member</span>
-      </a>
-
+    
+    <div class="right">
+      <div class="main-links">
+        <a href="#">About</a>
+        <a href="#">Board</a>
+        <a href="#">Events</a>
+        <a href="#" >Become A Member!</a>
+      </div>
+  
     </div>
   </nav>
+<!-- OUR MISSION -->
+  <header class="hero">
+    <div class="mission-content">
+      <h1>Our Mission</h1>
+      <p>ColorStack's mission is to <strong>empower</strong> Black, Indigenous, and Latinx Computer Science students by providing a strong community, academic support, and career opportunities. Through mentorship, networking, and professional development, ColorStack helps underrepresented students break into the tech industry and thrive in rewarding careers.</p>
+      
+<!-- Button for Become A Member but also text for the top left -->
+      <a href="#" class="cta-button">Become A Member!</a>
+    </div>
+    
+ <!--Group Photo for the top right-->
+    <div class="mission-image">
+      <img src="groupimg.png" alt="ColorStack QC Group Photo">
+    </div>
+  </header>
+  
 
-  <main>
-    <!--SECTION 1 | Our Mission -->
-    <section class = "mission">
-      <!--Text for the top left-->
-      <div class = "text">
-        <h2>Our Mission</h2>
-        <p>A supportive organization created to help Black, 
-          Indigenous, & Latinx Computer Science students 
-          gain rewarding tech careers.</p>
+   <!-- FOOTER/ SOCIAL LINKS -->
+   <footer>
 
-        <!--Button for Become A Member but also text for the top left-->
-        <div class = "become_member-link">
-          <a href = "/">
-            <span>Become A Chapter Member</span>
-          </a>
+    <div class="social-links-container">
+        <span class="connect-text">Connect with Us: </span>
+        <div class="social-links">
+            <a href="https://www.instagram.com/colorstack_qc/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+            </a>
+            <a href="https://linkedin.com/company/colorstack-qc" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                LinkedIn
+            </a>
+            <a href="https://discord.gg/ZhrDF7bkN7" target="_blank">
+                <i class="fa-brands fa-discord"></i>
+                Discord
+            </a>
         </div>
-      </div>
+    </div>
 
-      <!--Group Photo for the top right-->
-      <div class = "group-photo">
-        <img src = "images/group-photo.webp" alt = "group photo">
-      </div>
+</footer>
 
-    </section>
-
-    <!--SECTION 2 | Meet The Team -->
-    <section id = "team"></section>
-
-    <!--SECTION 3 | Events -->
-    <section id = "events"></section>
-
-    <!--SECTION 4 | FAQ -->
-    <section id = "faq"></section>
-
-    <!--SECTION 5 | Connect With Us -->
-    <section id = "connect"></section>
-  </main>
 </body>
 </html>
