@@ -1,5 +1,5 @@
 /*
-    Author: 
+    Authors: 
     Hanya R.
     Maira B.
  */
@@ -39,12 +39,14 @@ nav .left a {
 
 nav .right {
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
+    align-items: center; 
 }
+
 
 nav .main-links {
     display: flex; 
-    gap: clamp(4px, 2vw, 20px);  
+    gap: clamp(8px, 2vw, 20px); 
 }
 
 nav .right a {
@@ -63,7 +65,7 @@ nav i {
     text-align: center;
     text-shadow: 20px 10px 10px rgba(186, 13, 13, 0.5);
     color: #ffffff;
-    transform: translateY(-70px);
+    transform: translateY(-45px);
     padding-top: clamp(1px, 5vw, 40px); 
     padding-bottom: 0;
     width: 100%;
