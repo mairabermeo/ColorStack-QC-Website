@@ -1,3 +1,10 @@
+<!--
+    Authors: 
+    Jude M.
+    Maira B.
+    
+-->
+
 <!DOCTYPE html> 
 <html lang="en">
 <head>
@@ -19,65 +26,60 @@
 
 <body>
 
-  <!--NAVBAR-->
-  <nav>
-    <div class="left">
-      <a href="/">
-        <img src="images/logo.webp" alt="ColorStack Logo" class="logo"> 
-        ColorStack At QC
-      </a>
-    </div>
-
-    
-    <div class="right">
-      <div class="main-links">
-        <a href="#">About</a>
-        <a href="board.html">Board</a>
-        <a href="events.html">Events</a>
-        <a href="#">Become A Member!</a>
+    <!--NAVBAR-->
+    <nav>
+      <div class="left">
+        <a href="about.html">
+          <img src="images/logo.webp" alt="ColorStack Logo" class="logo"> 
+          ColorStack At QC
+        </a>
       </div>
   
-    </div>
-  </nav>
-<!-- OUR MISSION -->
-  <header class="hero">
-    <div class="mission-content">
-      <h1>Our Mission</h1>
-      <p>ColorStack's mission is to <strong>empower</strong> Black, Indigenous, and Latinx Computer Science students by providing a strong community, academic support, and career opportunities. Through mentorship, networking, and professional development, ColorStack helps underrepresented students break into the tech industry and thrive in rewarding careers.</p>
-      
-<!-- Button for Become A Member but also text for the top left -->
-      <a href="#" class="cta-button">Become A Member!</a>
-    </div>
-    
- <!--Group Photo for the top right-->
-    <div class="mission-image">
-      <img src="images/group-photo.webp" alt="ColorStack QC Group Photo">
-    </div>
-  </header>
+      <div class="right">
+        <div class="main-links">
+          <a href="about.html" onmouseover="changeNavColor(this)" onmouseout="revertNavColor(this)">About</a>
+          <a href="board.html" onmouseover="changeNavColor(this)" onmouseout="revertNavColor(this)">Board</a>
+          <a href="events.html" onmouseover="changeNavColor(this)" onmouseout="revertNavColor(this)">Events</a>
+          <a href="https://www.colorstack.org/" onmouseover="changeNavColor(this)" onmouseout="revertNavColor(this)">Become A Member</a>
+        </div>
+      </div>
+    </nav>
   
-
-   <!-- FOOTER/ SOCIAL LINKS -->
-   <footer>
-
-    <div class="social-links-container">
+    <!-- OUR MISSION -->
+    <header class="hero">
+      <div class="mission-content">
+        <h1>Our Mission</h1>
+        <p>ColorStack's mission is to <strong>empower Black</strong>, <strong>Indigenous</strong>, and <strong>Latinx Computer Science students</strong> by providing a <strong>strong community</strong>, <strong>academic support</strong>, and <strong>career opportunities</strong>.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXnlg5YaujiLCVDCLLAX0BdbrC5UmqfRcE2rhWNxAynNcLzQ/viewform?usp=sharing" 
+           class="cta-button" 
+           onmouseover="expandButton(this)" 
+           onmouseout="shrinkButton(this)">Become A Chapter Member</a>
+      </div>
+  
+      <!-- Group Photo -->
+      <div class="mission-image">
+        <img src="images/group.webp" alt="ColorStack QC Group Photo">
+      </div>
+    </header>
+  
+    <!-- FOOTER -->
+    <footer>
+      <div class="social-links-container">
         <span class="connect-text">Connect with Us: </span>
         <div class="social-links">
-            <a href="https://www.instagram.com/colorstack_qc/" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-instagram"></i>
-                Instagram
-            </a>
-            <a href="https://linkedin.com/company/colorstack-qc" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin"></i>
-                LinkedIn
-            </a>
-            <a href="https://discord.gg/ZhrDF7bkN7" target="_blank">
-                <i class="fa-brands fa-discord"></i>
-                Discord
-            </a>
+          <a href="https://www.instagram.com/colorstack_qc/" target="_blank">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+          <a href="https://linkedin.com/company/colorstack-qc" target="_blank">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://discord.gg/ZhrDF7bkN7" target="_blank">
+            <i class="fa-brands fa-discord"></i> Discord
+          </a>
         </div>
-    </div>
-
-</footer>
+      </div>
+    </footer>
+    <script src="function.js"></script>
 
 </body>
 </html>
