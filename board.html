@@ -1,4 +1,10 @@
-<!DOCTYPE html> 
+<!--
+    Author: 
+    Jude M.
+    Maira B.
+-->
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -12,7 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+  
   <link rel="stylesheet" href="board.css">
   <title>ColorStack</title>
 </head>
@@ -22,77 +28,101 @@
   <!--NAVBAR-->
   <nav>
     <div class="left">
-      <a href="/">
+      <a href="about.html">
         <img src="images/logo.webp" alt="ColorStack Logo" class="logo"> 
         ColorStack At QC
       </a>
     </div>
 
-    
     <div class="right">
       <div class="main-links">
-        <a href="#">About</a>
-        <a href="#">Board</a>
-        <a href="#">Events</a>
-        <a href="#">Become A Member!</a>
+        <a href="about.html" onmouseover="changeNavColor(this)" onmouseout="revertNavColor(this)">About</a>
+        <a href="board.html" onmouseover="changeNavColor(this)" onmouseout="revertNavColor(this)">Board</a>
+        <a href="events.html" onmouseover="changeNavColor(this)" onmouseout="revertNavColor(this)">Events</a>
+        <a href="https://www.colorstack.org/" onmouseover="changeNavColor(this)" onmouseout="revertNavColor(this)">Become A Member</a>
       </div>
     </div>
   </nav>
 
- <!--MEET THE TEAM-->
-  <section class="meet-the-team">
-    <h2>Meet the Team!</h2>
+  <!--MEET THE TEAM-->
+<section class="meet-the-team">
+  <h2>Meet the Team</h2>
+  <div class="carousel-container">
     <div class="team-container">
-        <div class="team-card">
-            <img src="images/presidentpic.webp" alt="President">
+      <div class="team-card">
+        <a href="board.html">
+          <img src="images/presidentpic.webp" alt="President">
+          <div class="card-info">
             <div class="role">President</div>
-        </div>
-        <div class="team-card">
-            <img src="images/vicepres.webp" alt="Vice President">
-            <div class="role">Vice President</div>
-        </div>
-        <div class="team-card">
-            <img src="images/treasurer.webp" alt="Treasurer">
-            <div class="role">Treasurer</div>
-        </div>
-        <div class="team-card">
-          <img src="images/socialmed.webp" alt="Vice President">
-          <div class="role">Social Media Manager</div>
+            <div class="name">Damaris</div>
+          </div>
+        </a>
       </div>
       <div class="team-card">
-          <img src="images/Community.webp" alt="Treasurer">
+        <a href="board.html">
+          <img src="images/vicepres.webp" alt="Vice President">
+          <div class="card-info">
+            <div class="role">Vice President</div>
+            <div class="name">Maira</div>
+          </div>
+        </a>
+      </div>
+      <div class="team-card">
+        <a href="board.html">
+          <img src="images/treasurer.webp" alt="Treasurer">
+          <div class="card-info">
+            <div class="role">Treasurer</div>
+            <div class="name">Sharlyn</div>
+          </div>
+        </a>
+      </div>
+      <div class="team-card">
+        <img src="images/socialmed.webp" alt="Social Media Manager">
+        <div class="card-info">
+          <div class="role">Social Media Manager</div>
+          <div class="name">Summer</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="images/Community.webp" alt="Community Engagement Coordinator">
+        <div class="card-info">
           <div class="role">Community Engagement Coordinator</div>
+          <div class="name">Daniel</div>
+        </div>
       </div>
     </div>
+    <!-- Navigation Buttons -->
+    <button class="prev-btn" onclick="moveCarousel('prev')">
+      <i class="fa-solid fa-arrow-left"></i>
+    </button>
+    <button class="next-btn" onclick="moveCarousel('next')">
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </div>
 </section>
 
 
-  
-      </section>
-
-   <!-- FOOTER -->
-   <footer>
-
+  <!-- FOOTER -->
+  <footer>
     <div class="social-links-container">
-        <span class="connect-text">Connect with Us: </span>
-        <div class="social-links">
-            <a href="https://www.instagram.com/colorstack_qc/" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-instagram"></i>
-                Instagram
-            </a>
-            <a href="https://linkedin.com/company/colorstack-qc" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin"></i>
-                LinkedIn
-            </a>
-            <a href="https://discord.gg/ZhrDF7bkN7" target="_blank">
-                <i class="fa-brands fa-discord"></i>
-                Discord
-            </a>
-        </div>
+      <span class="connect-text">Connect with Us: </span>
+      <div class="social-links">
+        <a href="https://www.instagram.com/colorstack_qc/" target="_blank">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a href="https://linkedin.com/company/colorstack-qc" target="_blank">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://discord.gg/ZhrDF7bkN7" target="_blank">
+          <i class="fa-brands fa-discord"></i> Discord
+        </a>
+      </div>
     </div>
+  </footer>
 
-</footer>
+  <script src="function.js"></script>
 
 </body>
 </html>
+
 
