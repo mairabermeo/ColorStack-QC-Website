@@ -78,6 +78,11 @@ nav i {
   margin-bottom: clamp(1px, 5vw, 5px); 
 }
 
+.events-content h1 img {
+  width: clamp(30px, 8vw, 50px);
+  height: auto; 
+}
+
 /* EVENTS SECTION */
 .events-container {
   display: flex;
